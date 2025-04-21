@@ -29,15 +29,14 @@ const LoginForm = () => {
     };
 
     return (
-         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-             {/* Display component-level or Zustand errors */}
-             {(submitError || authError) && (
-                 <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-                     <strong className="font-bold">Error: </strong>
-                     <span className="block sm:inline">{submitError || authError}</span>
-                 </div>
-             )}
-
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            {/* Display component-level or Zustand errors */}
+            {(submitError || authError) && (
+                <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+                    <strong className="font-bold">Error: </strong>
+                    <span className="block sm:inline">{submitError || authError}</span>
+                </div>
+            )}
             <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email address
@@ -60,7 +59,6 @@ const LoginForm = () => {
                     {errors.email && <p className="mt-2 text-sm text-red-600">{errors.email.message}</p>}
                 </div>
             </div>
-
             <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
                     Password
@@ -83,17 +81,15 @@ const LoginForm = () => {
                     {errors.password && <p className="mt-2 text-sm text-red-600">{errors.password.message}</p>}
                 </div>
             </div>
-
-             <div className="flex items-center justify-between">
-                {/* Keep me logged in (requires more implementation) */}
-                {/* <div className="flex items-center"> ... </div> */}
-                <div className="text-sm">
-                    <Link href="/auth/forgot-password" legacyBehavior>
-                       <a className="font-medium text-primary hover:text-primary-dark">Forgot your password?</a>
-                    </Link>
-                </div>
-             </div>
-
+            <div className="flex items-center justify-between">
+               {/* Keep me logged in (requires more implementation) */}
+               {/* <div className="flex items-center"> ... </div> */}
+               <div className="text-sm">
+                   <Link href="/auth/forgot-password" legacyBehavior>
+                      <a className="font-medium text-primary hover:text-primary-dark">Forgot your password?</a>
+                   </Link>
+               </div>
+            </div>
             <div>
                 <button
                     type="submit"
@@ -103,15 +99,14 @@ const LoginForm = () => {
                     {loading ? 'Signing in...' : 'Sign in'}
                 </button>
             </div>
-
-             <div className="text-sm text-center">
-                <p className="text-gray-600">
-                    Don't have an account?{' '}
-                    <Link href="/auth/register" legacyBehavior>
-                        <a className="font-medium text-primary hover:text-primary-dark">Sign up</a>
-                    </Link>
-                </p>
-            </div>
+            <div className="text-sm text-center">
+               <p className="text-gray-600">
+                   Don't have an account?{' '}
+                   <Link href="/auth/register" legacyBehavior>
+                       <a className="font-medium text-primary hover:text-primary-dark">Sign up</a>
+                   </Link>
+               </p>
+           </div>
         </form>
     );
 };

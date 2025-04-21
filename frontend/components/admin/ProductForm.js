@@ -48,7 +48,6 @@ const ProductForm = ({ product, onSubmit, onCancel, loading }) => {
                 error={errors.name}
                 placeholder="e.g., Modern Coffee Table"
             />
-
             <div className="mb-4">
                 <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
                     Description
@@ -63,8 +62,6 @@ const ProductForm = ({ product, onSubmit, onCancel, loading }) => {
                 ></textarea>
                  {errors.description && <p className="mt-1 text-xs text-red-600">{errors.description.message}</p>}
             </div>
-
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input
                     label="Price ($)"
@@ -98,7 +95,6 @@ const ProductForm = ({ product, onSubmit, onCancel, loading }) => {
                     placeholder="e.g., 50"
                 />
             </div>
-
             <Input
                 label="Image URL"
                 name="image_url"
@@ -114,8 +110,6 @@ const ProductForm = ({ product, onSubmit, onCancel, loading }) => {
                 error={errors.image_url}
                 placeholder="https://your-image-host.com/image.jpg"
             />
-
-
             <div className="flex justify-end space-x-3 pt-4 border-t mt-6">
                 <Button type="button" variant="outline" onClick={onCancel} disabled={loading}>
                     Cancel

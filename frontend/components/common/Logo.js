@@ -13,9 +13,11 @@ const Logo = ({ className = "h-8 w-auto" }) => {
     // Apply layout and interaction styles directly to it.
     <Link
       href="/"
-      className={`flex items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary rounded ${className}`} // Apply dynamic classes for sizing etc.
-      aria-label="Go to homepage" // Accessibility improvement
-    >
+      // Apply dynamic classes for sizing etc.
+      className={`flex items-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary rounded ${className}`}
+      // Accessibility improvement
+      aria-label="Go to homepage"
+      legacyBehavior>
       {/* Render the Image directly inside the Link */}
       <Image
         src="/logo.png" // Path relative to the public folder - MAKE SURE logo.svg exists in /public

@@ -1,22 +1,28 @@
 // frontend/pages/admin/orders.js
-import Layout from '@/components/layout/Layout';
-import withAdminAuth from '@/components/auth/withAdminAuth';
-import OrderList from '@/components/admin/OrderList'; // We will create this component
+import withAdminAuth from '@/components/auth/withAdminAuth'; // Use the specific admin HOC
+import Head from 'next/head'; // Import Head
+import OrderList from '@/components/admin/OrderList'; // Use the OrderList component
 
 const AdminOrdersPage = () => {
+  // OrderList component handles fetching and displaying orders
   return (
-    <Layout title="Manage Orders">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex justify-between items-center mb-6">
-            <h1 className="text-3xl font-bold">Manage Orders</h1>
-            {/* Add any actions like filtering if needed */}
-        </div>
+    <>
+        <Head>
+            <title>Manage Orders - Admin</title>
+             <meta name="description" content="View and manage customer orders." />
+        </Head>
+        <div className="container mx-auto px-4 py-8">
+            <div className="flex justify-between items-center mb-6">
+                <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">Manage Orders</h1>
+                {/* Optional: Add filtering or actions */}
+                {/* <Button>Filter Orders</Button> */}
+            </div>
 
-        {/* Order List Component */}
-        <OrderList />
+            {/* Render the OrderList component */}
+            <OrderList />
 
-      </div>
-    </Layout>
+          </div>
+    </>
   );
 };
 

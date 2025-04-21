@@ -10,8 +10,8 @@ const Navbar = () => {
     const user = useAuthStore((state) => state.user);
     const token = useAuthStore((state) => state.token);
     const logout = useAuthStore((state) => state.logout);
-    // Get cart count for badge (optional - requires implementation in cartStore)
-    // const itemCount = useCartStore((state) => state.getCartItemCount ? state.getCartItemCount() : 0); // Example
+    // Example: Get cart count for badge (optional - requires implementation in cartStore)
+    // const itemCount = useCartStore((state) => state.getCartItemCount ? state.getCartItemCount() : 0);
 
     const router = useRouter();
 
@@ -27,7 +27,8 @@ const Navbar = () => {
                     {/* Logo Section */}
                     <div className="flex-shrink-0">
                         {/* Render the Logo component - it handles its own linking */}
-                        <Logo /> {/* Adjust size via className if needed */}
+                        <Logo className="h-8 w-auto" /> {/* Use width/height props in Logo instead for fixed size */}
+                        {/* Or <Logo /> if size is handled internally */}
                     </div>
 
                     {/* Desktop Navigation Links */}
@@ -54,7 +55,7 @@ const Navbar = () => {
 
                         {/* Conditional rendering based on authentication state */}
                         {token && user ? (
-                            // User is logged in
+                            // --- User is logged in ---
                             <>
                                 {/* Admin Dashboard Link (only for admin users) */}
                                 {user.role === 'admin' && (
@@ -62,24 +63,29 @@ const Navbar = () => {
                                         <Cog6ToothIcon className="h-6 w-6" />
                                     </Link>
                                 )}
-                                {/* Profile Link */}
-                                <Link href="/profile" className="text-gray-500 hover:text-primary p-1 rounded-full flex items-center space-x-1" title="Your Profile">
-                                     <UserCircleIcon className="h-6 w-6" aria-hidden="true" />
-                                     {/* Show username on larger screens */}
-                                     <span className="hidden sm:inline text-sm">{user.username}</span>
-                                </Link>
+
+                                {/* Profile Link - CORRECTED */}
+                                <Link href="/profile" className="text-gray-500 hover:text-primary p-1 rounded-full" title="Your Profile">
+                                    {/* Wrap icon and text in a single span */}
+                                    <span className="flex items-center">
+                                        <UserCircleIcon className="h-6 w-6" aria-hidden="true" />
+                                        <span className="hidden sm:inline text-sm ml-1">{user.username}</span>
+                                    </span>
+                                 </Link>
+
                                 {/* Logout Button */}
                                 <button
                                     onClick={handleLogout}
                                     className="text-gray-500 hover:text-red-600 p-1 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                                     title="Logout"
+                                    aria-label="Logout"
                                 >
-                                    <span className="sr-only">Logout</span>
                                     <ArrowLeftOnRectangleIcon className="h-6 w-6" />
                                 </button>
                             </>
+                            // --- End User is logged in ---
                         ) : (
-                            // User is not logged in
+                            // --- User is not logged in ---
                             <Link href="/auth/login" className="btn btn-secondary text-sm">Login</Link>
                         )}
 

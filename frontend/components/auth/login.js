@@ -19,9 +19,9 @@ export default function LoginPage() {
 
 
      return (
-        // Using a simpler layout for auth pages, or reuse main Layout
-        // For simplicity, reusing main Layout
-        <Layout title="Login">
+         // Using a simpler layout for auth pages, or reuse main Layout
+         // For simplicity, reusing main Layout
+         <Layout title="Login">
              <div className="min-h-[calc(100vh-10rem)] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"> {/* Adjust min-height based on navbar/footer */}
                  <div className="max-w-md w-full space-y-8 bg-white p-8 md:p-10 rounded-lg shadow-lg">
                     <div>
@@ -35,8 +35,8 @@ export default function LoginPage() {
                     <LoginForm />
                  </div>
              </div>
-        </Layout>
-    );
+         </Layout>
+     );
 }
 
 // Optional: Prevent this page from rendering if already logged in via server-side check
