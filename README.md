@@ -23,7 +23,6 @@ A complete e-commerce web application built using the MERN-like stack (MySQL ins
 | **Register Page**        | *[Insert Register Screenshot Here]* <br/> ![Register Page](</screenshots/register.jpeg>)         |
 | **User Profile**         | *[Insert Profile Screenshot Here]* <br/> ![User Profile](</screenshots/profile.jpeg>)           |
 | **Checkout Page**        | *[Insert Checkout Screenshot Here]* <br/> ![Checkout Page](</screenshots/checkout.jpeg>)         |
-| **Admin Dashboard (Example)** | *[Insert Admin Screenshot Here - Optional]* <br/> ![Admin Dashboard](<insert_path_to_admin_screenshot.png>) |
 
 ## Features Implemented
 
@@ -245,8 +244,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 *   **GitHub:** [Garbii1](https://github.com/Garbii1)
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details (or include license text directly).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
