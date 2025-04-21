@@ -101,7 +101,7 @@ const LoginForm = () => {
             </div>
             <div className="text-sm text-center">
                <p className="text-gray-600">
-                   Don't have an account?{' '}
+                   Don&apos;t have an account?{' '}
                    <Link href="/auth/register" legacyBehavior>
                        <a className="font-medium text-primary hover:text-primary-dark">Sign up</a>
                    </Link>

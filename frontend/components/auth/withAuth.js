@@ -85,7 +85,7 @@ const withAuth = (WrappedComponent, options = {}) => {
 
 
         // Dependencies: Include everything that could trigger a needed re-check.
-        }, [token, user, loading, router, requiredRole, fetchUserProfile, isCheckingAuth, hasAttemptedFetch, logout]);
+        }, [token, user, loading, router, fetchUserProfile, isCheckingAuth, hasAttemptedFetch, logout]);
 
 
         // Render loading state while checking auth OR if Zustand state is loading

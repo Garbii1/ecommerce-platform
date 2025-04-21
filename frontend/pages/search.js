@@ -77,7 +77,7 @@ export default function SearchPage() {
                         <ProductList products={results} />
                     ) : (
                          <div className="text-center py-10 text-gray-500 dark:text-gray-400">
-                            <p>No products found matching your search term "{searchQuery}".</p>
+                            <p>No products found matching your search term &quot;{searchQuery}&quot;.</p>
                          </div>
                     )
                 )}
