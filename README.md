@@ -14,15 +14,15 @@ A complete e-commerce web application built using the MERN-like stack (MySQL ins
 
 | Page                     | Screenshot                                                                                               |
 | :----------------------- | :------------------------------------------------------------------------------------------------------- |
-| **Homepage**             | *[Insert Homepage Screenshot Here]* <br/> ![Homepage](</screenshots/home.jpeg>)          |
-| **Product Listing**      | *[Insert Product Listing Screenshot Here]* <br/> ![Product Listing](</screenshots/products.jpeg>) |
-| **Product Detail**       | *[Insert Product Detail Screenshot Here]* <br/> ![Product Detail](</screenshots/cart2.jpeg>) |
-| **Search Results**       | *[Insert Search Results Screenshot Here]* <br/> ![Search Results](</screenshots/search.jpeg>)     |
-| **Shopping Cart**        | *[Insert Cart Screenshot Here]* <br/> ![Shopping Cart](</screenshots/cart.jpeg>)               |
-| **Login Page**           | *[Insert Login Screenshot Here]* <br/> ![Login Page](</screenshots/login.jpeg>)                 |
-| **Register Page**        | *[Insert Register Screenshot Here]* <br/> ![Register Page](</screenshots/register.jpeg>)         |
-| **User Profile**         | *[Insert Profile Screenshot Here]* <br/> ![User Profile](</screenshots/profile.jpeg>)           |
-| **Checkout Page**        | *[Insert Checkout Screenshot Here]* <br/> ![Checkout Page](</screenshots/checkout.jpeg>)         |
+| **Homepage**             |  <br/> ![Homepage](</screenshots/home.jpeg>)          |
+| **Product Listing**      |  <br/> ![Product Listing](</screenshots/products.jpeg>) |
+| **Product Detail**       |  <br/> ![Product Detail](</screenshots/cart2.jpeg>) |
+| **Search Results**       |  <br/> ![Search Results](</screenshots/search.jpeg>)     |
+| **Shopping Cart**        |  <br/> ![Shopping Cart](</screenshots/cart.jpeg>)               |
+| **Login Page**           |  <br/> ![Login Page](</screenshots/login.jpeg>)                 |
+| **Register Page**        |  <br/> ![Register Page](</screenshots/register.jpeg>)         |
+| **User Profile**         |  <br/> ![User Profile](</screenshots/profile.jpeg>)           |
+| **Checkout Page**        |  <br/> ![Checkout Page](</screenshots/checkout.jpeg>)         |
 
 ## Features Implemented
 
