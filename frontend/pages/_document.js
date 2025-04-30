@@ -11,7 +11,7 @@ export default function Document() {
         {/* Link to specific fonts used in globals.css */}
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
          {/* Add other head elements like favicons, webmanifest */}
-         <link rel="icon" href="/favicon.ico" />
+         <link rel="icon" type="image/x-icon" href="/frontend/public/favicon.ico" />
       </Head>
       <body>
         <Main />
